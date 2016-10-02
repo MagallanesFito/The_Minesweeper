@@ -87,7 +87,7 @@ void expandirDFS(int x,int y){
         if(adX >= 0 && adX < MAX_ROWS && adY >=0 && adY < MAX_ROWS){
             if(Tablero[adX][adY] ==0 ){
                 destapadas++;
-                expandir(adX,adY);
+                expandirDFS(adX,adY);
             }
             else{
                 Visitados[adX][adY] = true;
